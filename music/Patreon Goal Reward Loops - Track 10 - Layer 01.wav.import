@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c1pl4nu0ag1vr"
+path="res://.godot/imported/Patreon Goal Reward Loops - Track 10 - Layer 01.wav-99249f3f677632f61087c931d988829c.sample"
+
+[deps]
+
+source_file="res://music/Patreon Goal Reward Loops - Track 10 - Layer 01.wav"
+dest_files=["res://.godot/imported/Patreon Goal Reward Loops - Track 10 - Layer 01.wav-99249f3f677632f61087c931d988829c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

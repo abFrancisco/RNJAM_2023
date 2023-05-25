@@ -1,0 +1,60 @@
+[gd_scene load_steps=4 format=3 uid="uid://duvh8xu16munl"]
+
+[ext_resource type="Script" path="res://Menu.gd" id="1_ftwkg"]
+[ext_resource type="Texture2D" uid="uid://dd66pi6bu4ic1" path="res://Textures/Player_preview.png" id="2_ib6bb"]
+[ext_resource type="Texture2D" uid="uid://cfoumllwgd8ef" path="res://Textures/randomize_button.png" id="2_ofvji"]
+
+[node name="Menu" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ftwkg")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -35.0
+offset_bottom = 35.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("2_ib6bb")
+stretch_mode = 5
+
+[node name="Randomize" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+focus_neighbor_right = NodePath("../Play")
+focus_neighbor_bottom = NodePath("../Play")
+icon = ExtResource("2_ofvji")
+icon_alignment = 1
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+focus_neighbor_left = NodePath("../Randomize")
+focus_neighbor_top = NodePath("../Randomize")
+focus_neighbor_right = NodePath("../Quit")
+focus_neighbor_bottom = NodePath("../Quit")
+text = "Jogar"
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+focus_neighbor_left = NodePath("../Play")
+focus_neighbor_top = NodePath("../Play")
+text = "Sair"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Randomize" to="." method="_on_randomize_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

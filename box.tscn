@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://fhdjitfet1ko"]
+
+[ext_resource type="Texture2D" uid="uid://bp643uhponmnx" path="res://kenney_1-bit-platformer-pack/Tiles/Default/tile_0009.png" id="1_8eex4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gqvqg"]
+size = Vector2(15, 15)
+
+[node name="Box" type="RigidBody2D"]
+collision_layer = 0
+collision_mask = 15
+mass = 500.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_gqvqg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_8eex4")

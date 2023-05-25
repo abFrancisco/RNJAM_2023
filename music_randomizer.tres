@@ -1,0 +1,25 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=7 format=3 uid="uid://wmkvi3xjqf6k"]
+
+[ext_resource type="AudioStream" uid="uid://c0pqb4m61wp86" path="res://music/Patreon Goal Reward Loops - Track 10 - Fill.wav" id="1_tdo7h"]
+[ext_resource type="AudioStream" uid="uid://c1pl4nu0ag1vr" path="res://music/Patreon Goal Reward Loops - Track 10 - Layer 01.wav" id="2_idu1e"]
+[ext_resource type="AudioStream" uid="uid://qokwl1ggfpbx" path="res://music/Patreon Goal Reward Loops - Track 10 - Layer 02.wav" id="3_acerp"]
+[ext_resource type="AudioStream" uid="uid://mylsxsw5g6bn" path="res://music/Patreon Goal Reward Loops - Track 10 - Layer 03.wav" id="4_a0wil"]
+[ext_resource type="AudioStream" uid="uid://l1807hclde1v" path="res://music/Patreon Goal Reward Loops - Track 10 - Layer 04.wav" id="5_jikq7"]
+[ext_resource type="AudioStream" uid="uid://bcv2alnw2ocg6" path="res://music/Patreon Goal Reward Loops - Track 10 - Layer 05.wav" id="6_86tcf"]
+
+[resource]
+streams_count = 6
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("1_tdo7h")
+stream_0/weight = 0.1
+stream_1/stream = ExtResource("2_idu1e")
+stream_1/weight = 2.0
+stream_2/stream = ExtResource("3_acerp")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("4_a0wil")
+stream_3/weight = 1.0
+stream_4/stream = ExtResource("5_jikq7")
+stream_4/weight = 1.0
+stream_5/stream = ExtResource("6_86tcf")
+stream_5/weight = 1.0
